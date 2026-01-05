@@ -168,6 +168,177 @@ export const products: Product[] = [
       'Dimensions': '48" x 30" x 36"',
       'Warranty': '3 Years'
     }
+  },
+  {
+    id: 9,
+    name: 'Bulk Cooker',
+    category: 'cooking-equipment',
+    description: 'Heavy-duty bulk cooker designed for large-scale food preparation in commercial kitchens.',
+    image: 'https://kolkatakitchen.com/content/images/product-1.jpg',
+    features: [
+      'High grade stainless steel',
+      'Corrosion resistant',
+      'High tensile strength',
+      'Customizable sizes available'
+    ],
+    specifications: {
+      'Material': 'Stainless Steel',
+      'Usage': 'Commercial',
+      'Finish': 'Premium',
+      'Customization': 'Available'
+    }
+  },
+  {
+    id: 10,
+    name: 'Tandoor',
+    category: 'cooking-equipment',
+    description: 'Professional commercial tandoor with excellent insulation and crack-resistant pot.',
+    image: 'https://kolkatakitchen.com/content/images/product-2.jpg',
+    features: [
+      'Energy efficient insulation',
+      'Crack resistant pot',
+      'High heat retention',
+      'Removable wheels'
+    ],
+    specifications: {
+      'Fuel Type': 'Gas / Charcoal',
+      'Body': 'Stainless Steel',
+      'Mobility': 'Yes',
+      'Usage': 'Restaurant'
+    }
+  },
+  {
+    id: 11,
+    name: 'Single Burner Range',
+    category: 'gas-stoves',
+    description: 'Commercial single burner gas range with brass burner and fuel-efficient design.',
+    image: 'https://kolkatakitchen.com/content/images/product-3.jpg',
+    features: [
+      'Brass burner',
+      'Fuel efficient',
+      'Rust resistant',
+      'Easy to clean'
+    ],
+    specifications: {
+      'Burners': '1',
+      'Material': 'Stainless Steel',
+      'Fuel': 'Gas',
+      'Usage': 'Commercial'
+    }
+  },
+  {
+    id: 12,
+    name: 'Static Baking Oven',
+    category: 'bakery-equipment',
+    description: 'Commercial baking oven suitable for bread, pastries, cookies and more.',
+    image: 'https://kolkatakitchen.com/content/images/product-11.jpg',
+    features: [
+      'Multi-deck options',
+      'Gas or electric operation',
+      'Mineral wool insulation',
+      'Independent heat control'
+    ],
+    specifications: {
+      'Operation': 'Gas / Electric',
+      'Decks': 'Single / Double / Triple',
+      'Usage': 'Bakery',
+      'Construction': 'MS Interior, SS Front'
+    }
+  },
+  {
+    id: 13,
+    name: 'Planetary Mixer',
+    category: 'mixers',
+    description: 'High-performance planetary mixer with multiple speed settings for bakery and commercial kitchens.',
+    image: 'https://kolkatakitchen.com/content/images/product-14.jpg',
+    features: [
+      'Removable stainless steel bowl',
+      'Multiple speed control',
+      'Low noise operation',
+      'Corrosion resistant'
+    ],
+    specifications: {
+      'Speeds': '3 + Neutral',
+      'Bowl Material': 'Stainless Steel',
+      'Usage': 'Bakery / Commercial',
+      'Warranty': '1 Year'
+    }
+  },
+  {
+    id: 14,
+    name: 'Cold Display Counter',
+    category: 'display-counters',
+    description: 'Cold display counter ideal for sweets, cakes, pastries, and snacks.',
+    image: 'https://kolkatakitchen.com/content/images/product-19.jpg',
+    features: [
+      'Powerful cooling',
+      'Glass shelves',
+      'Granite / marble top',
+      'Elegant display'
+    ],
+    specifications: {
+      'Cooling Type': 'Refrigerated',
+      'Shelves': '2–3',
+      'Body': 'Stainless Steel',
+      'Usage': 'Sweet Shop / Bakery'
+    }
+  },
+  {
+    id: 15,
+    name: 'Four Door Refrigerator',
+    category: 'refrigeration',
+    description: 'Commercial four-door refrigerator with efficient cooling and digital temperature control.',
+    image: 'https://kolkatakitchen.com/content/images/product-22.jpg',
+    features: [
+      'Imported compressor',
+      'Digital temperature control',
+      'Energy efficient',
+      'SS 304 construction'
+    ],
+    specifications: {
+      'Doors': '4',
+      'Material': 'SS 304',
+      'Defrost': 'Auto',
+      'Usage': 'Commercial'
+    }
+  },
+  {
+    id: 16,
+    name: 'Dish Washer',
+    category: 'washing-equipment',
+    description: 'Commercial dishwasher with hygienic self-cleaning cycle and electronic control.',
+    image: 'https://kolkatakitchen.com/content/images/product-49.jpg',
+    features: [
+      'Self-cleaning cycle',
+      'Electronic control panel',
+      'Chemical dispenser',
+      'High hygiene standards'
+    ],
+    specifications: {
+      'Operation': 'Automatic',
+      'Installation': 'Ready to install',
+      'Usage': 'Hotel / Restaurant',
+      'Body': 'Stainless Steel'
+    }
+  },
+  {
+    id: 17,
+    name: 'Exhaust Hood with Filter',
+    category: 'exhaust-system',
+    description: 'Commercial exhaust hood with grease filters for effective smoke and vapor removal.',
+    image: 'https://kolkatakitchen.com/content/images/product-60.jpg',
+    features: [
+      'High exhaust flow',
+      'Grease baffle filters',
+      'Insulated double wall',
+      'Durable SS body'
+    ],
+    specifications: {
+      'Installation': 'Wall / Island',
+      'Filters': 'Grease Baffle',
+      'Material': 'Stainless Steel',
+      'Usage': 'Commercial Kitchen'
+    }
   }
 ];
 
@@ -177,5 +348,11 @@ export const categories = [
   { id: 'appliances', name: 'Appliances', icon: 'Package' },
   { id: 'gas-stoves', name: 'Gas Stoves', icon: 'UtensilsCrossed' },
   { id: 'utensils', name: 'Utensils', icon: 'UtensilsCrossed' },
-  { id: 'mixers', name: 'Mixers & Grinders', icon: 'Package' }
+  { id: 'mixers', name: 'Mixers & Grinders', icon: 'Package' },
+  { id: 'cooking-equipment', name: 'Cooking Equipment', icon: 'Flame' },
+  { id: 'bakery-equipment', name: 'Bakery Equipment', icon: 'ChefHat' },
+  { id: 'display-counters', name: 'Display Counters', icon: 'Store' },
+  { id: 'refrigeration', name: 'Refrigeration', icon: 'Snowflake' },
+  { id: 'washing-equipment', name: 'Washing Equipment', icon: 'Droplets' },
+  { id: 'exhaust-system', name: 'Exhaust System', icon: 'Wind' }
 ];
