@@ -18,7 +18,7 @@ export function Header({ onNavigate, currentSection }: HeaderProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { id: 'home', label: 'Home' },
+    { id: '', label: 'Home' },
     { id: 'products', label: 'Products' },
     { id: 'categories', label: 'Categories' },
     { id: 'about', label: 'About' },
