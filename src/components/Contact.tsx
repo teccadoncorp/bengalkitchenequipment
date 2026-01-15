@@ -87,8 +87,8 @@ Message: ${formData.message}
                 <CardDescription>Send us an email</CardDescription>
               </CardHeader>
               <CardContent>
-                <a href="mailto:info@bengalkitchen.com" className="text-lg font-medium hover:text-blue-600 transition-colors">
-                  info@bengalkitchen.com
+                <a href="mailto:info@bengalkitchen.in" className="text-lg font-medium hover:text-blue-600 transition-colors">
+                  info@bengalkitchen.in
                 </a>
               </CardContent>
             </Card>

@@ -1466,6 +1466,197 @@ export const products: Product[] = [
       Application: 'Commercial Kitchen Gas Supply'
     }
   },
+    {
+    id: 71,
+    name: 'Work Table',
+    category: 'appliances',
+    description: 'Heavy-duty stainless steel work table designed for efficient food preparation in commercial kitchens.',
+    image: '/product/product-50.jpg',
+    features: [
+      'Stainless steel work bench with splash back',
+      'High durability',
+      'Reliable performance',
+      'Adjustable legs for uneven floors'
+    ],
+    specifications: {
+      Material: 'Stainless Steel',
+      Design: 'Work Table with Splash Back',
+      Legs: 'Adjustable',
+      Durability: 'High',
+      Usage: 'Commercial Kitchen'
+    }
+  },
+  {
+    id: 72,
+    name: 'Platform Trolley',
+    category: 'appliances',
+    description: 'Robust platform trolley built for smooth and efficient material handling in commercial environments.',
+    image: '/product/product-51.jpg',
+    features: [
+      'Excellent quality raw material',
+      'High durability',
+      'Reliable performance'
+    ],
+    specifications: {
+      Material: 'Heavy Duty Metal',
+      Mobility: 'High',
+      Durability: 'High',
+      Usage: 'Commercial & Industrial'
+    }
+  },
+  {
+    id: 73,
+    name: 'Onion / Potato Bin',
+    category: 'appliances',
+    description: 'Durable storage bin specially designed for hygienic storage of onions and potatoes.',
+    image: '/product/product-52.jpg',
+    features: [
+      'Superior storage design',
+      'Fabricated using premium raw materials',
+      'High durability'
+    ],
+    specifications: {
+      Material: 'Metal',
+      StorageType: 'Vegetable Storage',
+      ItemsStored: 'Onion & Potato',
+      Durability: 'High'
+    }
+  },
+  {
+    id: 74,
+    name: 'Store Rack',
+    category: 'appliances',
+    description: 'Strong and reliable store rack suitable for organized storage in kitchens and storerooms.',
+    image: '/product/product-53.jpg',
+    features: [
+      'Excellent quality raw material',
+      'Reliable performance',
+      'High durability'
+    ],
+    specifications: {
+      Material: 'Metal',
+      StorageType: 'Rack System',
+      Durability: 'High',
+      Usage: 'Kitchen & Store Room'
+    }
+  },
+  {
+    id: 75,
+    name: 'Hot Food Trolley',
+    category: 'appliances',
+    description: 'Mobile hot food trolley designed to keep food warm while ensuring smooth transport and safety.',
+    image: '/product/product-54.jpg',
+    features: [
+      'High mobility with tough metal construction',
+      'Heavy duty armored heating elements',
+      'Precision bearings for easy manoeuvring',
+      'Electrical isolation protection',
+      'High temperature thermostat'
+    ],
+    specifications: {
+      Material: 'Metal',
+      HeatingType: 'Electric',
+      TemperatureControl: 'Thermostat Controlled',
+      Mobility: 'High',
+      Usage: 'Food Service'
+    }
+  },
+  {
+    id: 76,
+    name: 'Electric Plate Warmer',
+    category: 'appliances',
+    description: 'Energy-efficient electric plate warmer designed to maintain plate temperature before serving.',
+    image: '/product/product-55.jpg',
+    features: [
+      'All stainless steel body',
+      'Holds approximately 75–100 plates',
+      'Large capacity with low energy consumption',
+      'Safe and easy transportation'
+    ],
+    specifications: {
+      Material: 'Stainless Steel',
+      Capacity: '75–100 Plates',
+      EnergyConsumption: 'Low',
+      Operation: 'Electric',
+      Usage: 'Commercial Kitchen'
+    }
+  },
+  {
+    id: 77,
+    name: 'Bain Marie',
+    category: 'appliances',
+    description: 'Table-top Bain Marie designed to keep food hot while maintaining consistent serving temperatures.',
+    image: '/product/product-56.jpg',
+    features: [
+      'Table-top design',
+      'Maintains food temperature',
+      '2 to 6 separate vessels',
+      'Temperature control knob',
+      'Easy to clean stainless steel construction'
+    ],
+    specifications: {
+      Material: 'Stainless Steel',
+      Vessels: '2–6',
+      TemperatureControl: 'Manual Knob',
+      Design: 'Table Top',
+      Usage: 'Food Holding & Serving'
+    }
+  },
+  {
+    id: 78,
+    name: 'Home Service Trolley',
+    category: 'appliances',
+    description: 'Reliable service trolley designed for efficient food and utility transport.',
+    image: '/product/product-57.jpg',
+    features: [
+      'Excellent quality raw material',
+      'High durability',
+      'Reliable performance'
+    ],
+    specifications: {
+      Material: 'Metal',
+      Mobility: 'High',
+      Durability: 'High',
+      Usage: 'Service & Utility'
+    }
+  },
+  {
+    id: 79,
+    name: 'Luggage Trolley',
+    category: 'appliances',
+    description: 'Strong luggage trolley suitable for hotels and commercial premises.',
+    image: '/product/product-58.jpg',
+    features: [
+      'Excellent quality raw material',
+      'High durability',
+      'Reliable performance'
+    ],
+    specifications: {
+      Material: 'Metal',
+      LoadCapacity: 'Heavy Duty',
+      Mobility: 'Smooth Rolling',
+      Usage: 'Hotel & Commercial'
+    }
+  },
+  {
+    id: 80,
+    name: 'Utility Trolley',
+    category: 'appliances',
+    description: 'Multi-purpose utility trolley designed for smooth transport and long-term durability.',
+    image: '/product/product-59.jpg',
+    features: [
+      'Excellent quality raw material',
+      'High durability',
+      'Reliable performance'
+    ],
+    specifications: {
+      Material: 'Metal',
+      Mobility: 'High',
+      Durability: 'High',
+      Usage: 'Kitchen & Utility Operations'
+    }
+  }
+
 
 
 
@@ -1484,7 +1675,7 @@ export const categories = [
   { id: 'washingequipment', name: 'Washing Equipment', icon: '/product/product-44.jpg' },
   { id: 'exhaust-system', name: 'Exhaust System', icon: '/product/product-62.jpg' },
   { id: 'gas-stoves', name: 'Gas Bank', icon: '/category/gas_bank.png' },
-  { id: 'appliances', name: 'Appliances', icon: '/product/product-55.jpg' },
+  { id: 'appliances', name: 'General Equipments', icon: '/product/product-55.jpg' },
   
   // { id: 'utensils', name: 'Utensils', icon: 'UtensilsCrossed' },
   // { id: 'mixers', name: 'Mixers & Grinders', icon: 'Package' },

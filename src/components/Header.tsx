@@ -41,7 +41,7 @@ export function Header({ onNavigate, currentSection }: HeaderProps) {
           </div>
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
             <Mail className="h-4 w-4" />
-            <span>info@bengalkitchen.com</span>
+            <span>info@bengalkitchen.in</span>
           </div>
         </div>
 
@@ -141,7 +141,7 @@ export function Header({ onNavigate, currentSection }: HeaderProps) {
                     </div>
                     <div className="flex items-center gap-3 text-sm">
                       <Mail className="h-5 w-5 text-muted-foreground" />
-                      <span>info@bengalkitchen.com</span>
+                      <span>info@bengalkitchen.in</span>
                     </div>
                   </div>
                 </nav>
