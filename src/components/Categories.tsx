@@ -32,32 +32,43 @@ export function Categories({ onCategorySelect, selectedCategory }: CategoriesPro
               <Card
                 key={category.id}
                 onClick={() => onCategorySelect(category.id)}
-                className={`cursor-pointer transition-all hover:shadow-lg ${
-                  isSelected ? 'ring-2 ring-orange-600 shadow-lg' : ''
-                }`}
+                className={`group relative cursor-pointer overflow-hidden rounded-xl transition-all duration-300
+                  hover:shadow-xl
+                  ${isSelected ? 'ring-2 ring-orange-600 shadow-lg' : ''}
+                `}
               >
-                <CardContent className="p-6 text-center space-y-3">
-                  {/* Image Container */}
-                  <div
-                    className={`mx-auto w-35 h-35 rounded-full bg-gradient-to-br  flex items-center justify-center`}
-                  >
-                    <img
-                      src={category.icon}
-                      alt={category.name}
-                      className="w-full h-full object-contain transition-transform group-hover:scale-110"
-                      loading="lazy"
-                    />
-                  </div>
+                {/* Full Image */}
+                <img
+                  src={category.icon}
+                  alt={category.name}
+                  className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
+                  loading="lazy"
+                />
 
-                  <div>
-                    <h3 className="font-semibold text-sm mb-1">
-                      {category.name}
-                    </h3>
-                    <p className="text-xs text-muted-foreground">
-                      {/* {category.count} */}
-                    </p>
-                  </div>
-                </CardContent>
+                {/* Overlay */}
+                <div
+                  className={`
+                    absolute inset-0 flex items-center justify-center
+                    bg-black/60 transition-opacity duration-300
+
+                    opacity-100 sm:opacity-0 sm:group-hover:opacity-100
+                  `}
+                >
+                  {/* Title */}
+                  <h3
+                    className={`
+                      text-white font-semibold tracking-wide text-center px-3
+
+                      /* Mobile → bottom center */
+                      absolute bottom-4 left-1/2 -translate-x-1/2 text-sm
+
+                      /* Desktop → center on hover */
+                      sm:static sm:translate-x-0 sm:text-base
+                    `}
+                  >
+                    {category.name}
+                  </h3>
+                </div>
               </Card>
             );
           })}

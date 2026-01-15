@@ -50,7 +50,7 @@ export function Header({ onNavigate, currentSection }: HeaderProps) {
           {/* Logo */}
           <div
               className="cursor-pointer flex items-center gap-3"
-              onClick={() => handleNavClick('home')}
+              onClick={() => handleNavClick('')}
             >
               {/* Logo Image */}
               <img

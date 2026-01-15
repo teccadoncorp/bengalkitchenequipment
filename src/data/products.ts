@@ -344,16 +344,16 @@ export const products: Product[] = [
 
 export const categories = [
   { id: 'all', name: 'All Products', icon: '/product/product-1.jpg' },
-  { id: 'cookware', name: 'Cooking Equipment', icon: '/product/product-1.jpg' },
-  { id: 'display-counters', name: 'Display Counters', icon: '/product/product-18.jpg' },
-  { id: 'cooking-equipment', name: 'Cooking Equipment', icon: '/product/product-2.jpg' },
-  { id: 'bakery-equipment', name: 'Bakery Equipment', icon: '/product/product-12.jpg' },
+  // { id: 'cookware', name: 'Cooking Equipment', icon: '/product/product-1.jpg' },
+  { id: 'display-counters', name: 'Display Counters', icon: '/category/display.jpg' },
+  { id: 'cooking-equipment', name: 'Cooking Equipment', icon: '/category/cooking.png' },
+  { id: 'bakery-equipment', name: 'Bakery Equipment', icon: '/category/BAKERY.jpg' },
   { id: 'refrigeration', name: 'Refrigeration', icon: '/product/product-22.jpg' },
   { id: 'pantry', name: 'Pantry Equipment', icon: '/product/product-28.jpg'},
   { id: 'foodprocess', name: 'Food Processing Equipment', icon: '/product/product-33.jpg' },
   { id: 'washingequipment', name: 'Washing Equipment', icon: '/product/product-44.jpg' },
   { id: 'exhaust-system', name: 'Exhaust System', icon: '/product/product-62.jpg' },
-  { id: 'gas-stoves', name: 'Gas Bank', icon: '/product/product-64.jpg' },
+  { id: 'gas-stoves', name: 'Gas Bank', icon: '/category/gas_bank.png' },
   { id: 'appliances', name: 'Appliances', icon: '/product/product-55.jpg' },
   
   // { id: 'utensils', name: 'Utensils', icon: 'UtensilsCrossed' },
