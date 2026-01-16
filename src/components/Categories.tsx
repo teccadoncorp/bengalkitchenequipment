@@ -1,4 +1,5 @@
-import { Card, CardContent } from './ui/card';
+import { Card } from './ui/card';
+// import { Card, CardContent } from './ui/card';
 import type { CategoryType } from '../types/product';
 import { categories }  from '../data/products';
 interface CategoriesProps {
