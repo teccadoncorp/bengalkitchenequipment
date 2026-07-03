@@ -1,9 +1,11 @@
 import { useState, useMemo } from 'react';
 import type { Product, CategoryType } from '../types/product';
-import { products as allProducts } from '../data/products';
+import { useProducts } from '../hooks/useProducts';
 import { ProductCard } from './ProductCard';
 import { ProductDetail } from './ProductDetail';
 import { Input } from './ui/input';
+import { Skeleton } from './ui/skeleton';
+import { Button } from './ui/button';
 import { Search } from 'lucide-react';
 import {
   Select,
@@ -18,6 +20,7 @@ interface ProductsProps {
 }
 
 export function Products({ selectedCategory }: ProductsProps) {
+  const { products: allProducts, loading, error, refetch } = useProducts();
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [sortBy, setSortBy] = useState('name');
@@ -48,7 +51,7 @@ export function Products({ selectedCategory }: ProductsProps) {
     });
 
     return filtered;
-  }, [selectedCategory, searchQuery, sortBy]);
+  }, [allProducts, selectedCategory, searchQuery, sortBy]);
 
   return (
     <section className="py-16">
@@ -85,7 +88,20 @@ export function Products({ selectedCategory }: ProductsProps) {
         </div>
 
         {/* Products Grid */}
-        {filteredProducts.length > 0 ? (
+        {loading ? (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {Array.from({ length: 8 }).map((_, index) => (
+              <Skeleton key={index} className="h-80 w-full" />
+            ))}
+          </div>
+        ) : error ? (
+          <div className="text-center py-12 space-y-4">
+            <p className="text-muted-foreground">Failed to load products. Please try again.</p>
+            <Button variant="outline" onClick={refetch}>
+              Retry
+            </Button>
+          </div>
+        ) : filteredProducts.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {filteredProducts.map((product) => (
               <ProductCard

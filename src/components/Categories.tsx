@@ -1,14 +1,16 @@
 import { Card } from './ui/card';
-// import { Card, CardContent } from './ui/card';
+import { Skeleton } from './ui/skeleton';
+import { Button } from './ui/button';
 import type { CategoryType } from '../types/product';
-import { categories }  from '../data/products';
+import { useCategories } from '../hooks/useCategories';
+
 interface CategoriesProps {
-  onCategorySelect: (category:any) => void;
+  onCategorySelect: (category: string) => void;
   selectedCategory: CategoryType;
 }
 
 export function Categories({ onCategorySelect, selectedCategory }: CategoriesProps) {
-
+  const { categories, loading, error, refetch } = useCategories();
 
   return (
     <section className="py-16 bg-muted/50">
@@ -25,6 +27,20 @@ export function Categories({ onCategorySelect, selectedCategory }: CategoriesPro
           </p>
         </div>
 
+        {loading ? (
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            {Array.from({ length: 6 }).map((_, index) => (
+              <Skeleton key={index} className="h-48 w-full rounded-xl" />
+            ))}
+          </div>
+        ) : error ? (
+          <div className="text-center py-12 space-y-4">
+            <p className="text-muted-foreground">Failed to load categories. Please try again.</p>
+            <Button variant="outline" onClick={refetch}>
+              Retry
+            </Button>
+          </div>
+        ) : (
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
           {categories.map((category) => {
             const isSelected = selectedCategory === category.id;
@@ -74,6 +90,7 @@ export function Categories({ onCategorySelect, selectedCategory }: CategoriesPro
             );
           })}
         </div>
+        )}
       </div>
     </section>
   );
