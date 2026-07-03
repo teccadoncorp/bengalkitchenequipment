@@ -12,6 +12,14 @@ import { Contact } from './components/Contact';
 import type { CategoryType } from './types/product';
 import { Toaster } from './components/ui/sonner';
 import { Card, CardContent } from './components/ui/card';
+import { RequireAuth } from './components/admin/RequireAuth';
+import { AdminLogin } from './pages/admin/AdminLogin';
+import { AdminLayout } from './pages/admin/AdminLayout';
+import { AdminDashboard } from './pages/admin/AdminDashboard';
+import { AdminProductList } from './pages/admin/AdminProductList';
+import { AdminProductForm } from './pages/admin/AdminProductForm';
+import { AdminCategoryList } from './pages/admin/AdminCategoryList';
+import { AdminCategoryForm } from './pages/admin/AdminCategoryForm';
 
 export default function App() {
   const values = [
@@ -131,6 +139,20 @@ export default function App() {
 
           {/* CONTACT */}
           <Route path="/contact" element={<Contact />} />
+
+          {/* ADMIN */}
+          <Route path="/admin/login" element={<AdminLogin />} />
+          <Route element={<RequireAuth />}>
+            <Route path="/admin" element={<AdminLayout />}>
+              <Route index element={<AdminDashboard />} />
+              <Route path="products" element={<AdminProductList />} />
+              <Route path="products/new" element={<AdminProductForm />} />
+              <Route path="products/:id/edit" element={<AdminProductForm />} />
+              <Route path="categories" element={<AdminCategoryList />} />
+              <Route path="categories/new" element={<AdminCategoryForm />} />
+              <Route path="categories/:id/edit" element={<AdminCategoryForm />} />
+            </Route>
+          </Route>
 
         </Routes>
       </main>
